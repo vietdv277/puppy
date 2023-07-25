@@ -1,6 +1,10 @@
 package puppy
 
-import "github.com/vietdv277/dog"
+import (
+	"fmt"
+
+	"github.com/vietdv277/dog"
+)
 
 func Bark() string {
 	return "Wolf!"
@@ -16,4 +20,8 @@ func BigBark() string {
 
 func BigBarks() string {
 	return dog.WhenGrownUp(Barks())
+}
+
+func From11() {
+	fmt.Println("Message from version 1.1.0")
 }
